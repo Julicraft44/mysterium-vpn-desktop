@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { notarize } = require("electron-notarize")
+const { notarize } = require("@electron/notarize")
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require("../package.json")
@@ -27,5 +27,6 @@ exports.default = async function notarizing(context) {
         appPath: `${appOutDir}/${appName}.app`,
         appleId: process.env.APPLEID,
         appleIdPassword: process.env.APPLEIDPASS,
+        teamId: process.env.APPLETEAMID,
     })
 }

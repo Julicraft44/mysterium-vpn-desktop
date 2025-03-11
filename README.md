@@ -103,7 +103,7 @@ Logs help to debug issues when something goes wrong. Make sure to attach all of 
 ## Development
 
 Pre-requisites:
-- Node 14 LTS
+- Node >=16 LTS
 - yarn
 
 1. Install and build the project
@@ -121,6 +121,7 @@ Pre-requisites:
 Required env variables (macOS):
 - APPLEID
 - APPLEIDPASS (generate an app-specific password for this)
+- APPLETEAMID
 
 ```
 yarn bundle
